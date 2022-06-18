@@ -7,13 +7,21 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
+
+public class AnswerMessageInfo {
+
+
 @Data
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@JsonNaming (value = PropertyNamingStrategies.SnakeCaseStrategy.class)
-public class LoginInfo {
-    private String userName;
-    private String userLogin;
-    private String userPassword;
+@JsonNaming(value = PropertyNamingStrategies.SnakeCaseStrategy.class)
+    public class LoginInfo {
+
+        private Date receiveIdDate;
+        private Integer receiverId;
+        private Integer senderId;
+        private String message;
+    }
 }
