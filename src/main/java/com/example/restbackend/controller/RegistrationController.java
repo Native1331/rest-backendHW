@@ -13,7 +13,7 @@ import java.util.Map;
  найти друга по Ф.И.О+, в ответ его ID, отправить сообщение от одного к другому+
  (сохраняется на сервере само сообщение и ID от кого кому), проверить есть ли сообщения для себя (по своему ID));**/
 @RestController
-public class ChatController {
+public class RegistrationController {
     private Map<String, LoginInfo> userLogin = Map.of(
             "Dmitriy Dmitriev", LoginInfo.builder().userLogin("Dmitriy Dmitriev").build(),
             "Olga Sidorova", LoginInfo.builder().userLogin("Olga Sidorova").build(),
